@@ -102,3 +102,37 @@
 .featured__card-btn:hover {
   background: #3c2418;
 }
+
+@media (max-width: 1024px) {
+  .featured {
+    padding: 80px 32px;
+  }
+
+  .featured__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .featured {
+    padding: 60px 20px;
+  }
+
+  .featured__header {
+    margin-bottom: 48px;
+  }
+
+  .featured__title {
+    font-size: 36px;
+  }
+
+  .featured__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .featured__card-image {
+    height: 200px;
+  }
+}

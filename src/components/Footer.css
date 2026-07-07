@@ -117,3 +117,28 @@
   color: #6b5a4f;
   margin: 0;
 }
+
+@media (max-width: 1024px) {
+  .footer__inner {
+    flex-wrap: wrap;
+    gap: 48px;
+    padding: 60px 32px 40px;
+  }
+
+  .footer__brand {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer__inner {
+    flex-direction: column;
+    gap: 40px;
+    padding: 48px 20px 32px;
+  }
+
+  .footer__bottom {
+    padding: 20px;
+  }
+}

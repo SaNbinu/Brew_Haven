@@ -71,3 +71,36 @@
 .about__btn:hover {
   background: #3c2418;
 }
+
+@media (max-width: 1024px) {
+  .about {
+    flex-direction: column-reverse;
+    gap: 48px;
+    padding: 80px 32px;
+    text-align: center;
+  }
+
+  .about__content {
+    max-width: 100%;
+  }
+
+  .about__image-placeholder {
+    height: 400px;
+  }
+}
+
+@media (max-width: 640px) {
+  .about {
+    padding: 60px 20px;
+    gap: 32px;
+  }
+
+  .about__title {
+    font-size: 36px;
+    letter-spacing: -1px;
+  }
+
+  .about__image-placeholder {
+    height: 280px;
+  }
+}
