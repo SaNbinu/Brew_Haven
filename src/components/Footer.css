@@ -6,7 +6,7 @@
 .footer__inner {
   display: flex;
   justify-content: space-between;
-  gap: 60px;
+  gap: 80px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 80px 64px 60px;
@@ -45,7 +45,7 @@
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.06);
   color: #a39284;
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.25s, color 0.25s;
 }
 
 .footer__social-link:hover {
@@ -55,6 +55,7 @@
 
 .footer__col {
   flex: 1;
+  min-width: 140px;
 }
 
 .footer__col-title {
@@ -79,7 +80,7 @@
   font-size: 14px;
   color: #a39284;
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color 0.25s;
 }
 
 .footer__link:hover {

@@ -27,7 +27,7 @@
   line-height: 1.7;
   color: #7a6a5e;
   margin: 0 0 44px;
-  max-width: 420px;
+  max-width: 480px;
 }
 
 .hero__buttons {
@@ -37,12 +37,13 @@
 
 .hero__btn {
   display: inline-block;
-  padding: 14px 32px;
+  padding: 14px 36px;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.5px;
   cursor: pointer;
   border: none;
+  border-radius: 4px;
   text-decoration: none;
   transition: background 0.25s, color 0.25s;
 }
