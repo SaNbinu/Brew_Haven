@@ -1,3 +1,61 @@
+:root {
+  --color-bg: #fdfcfa;
+  --color-surface: #f9f6f3;
+  --color-card: #fff;
+  --color-primary: #1a110b;
+  --color-primary-hover: #3c2418;
+  --color-text: #5a3e32;
+  --color-text-heading: #1a110b;
+  --color-text-secondary: #7a6a5e;
+  --color-text-muted: #6b5a4f;
+  --color-text-tertiary: #8b7a6e;
+  --color-text-on-dark: #f8f4ef;
+  --color-border: #ece6e0;
+  --color-border-light: #d4c9c0;
+  --color-border-alt: #f0eae4;
+  --color-accent: #c67a4e;
+  --color-header-bg: rgba(253, 252, 250, 0.85);
+  --color-header-bg-solid: rgba(253, 252, 250, 0.92);
+  --color-overlay: rgba(0, 0, 0, 0.45);
+  --color-shadow: rgba(26, 17, 11, 0.04);
+  --color-shadow-hover: rgba(26, 17, 11, 0.1);
+  --color-shadow-strong: rgba(0, 0, 0, 0.35);
+  --color-footer-bg: #1a110b;
+  --color-footer-text: #c4b5a8;
+  --color-footer-heading: #fff;
+  --color-footer-muted: #a39284;
+  --color-footer-label: #6b5a4f;
+}
+
+.dark-theme {
+  --color-bg: #18120E;
+  --color-surface: #2E2119;
+  --color-card: #241A14;
+  --color-primary: #B07A50;
+  --color-primary-hover: #C98B58;
+  --color-text: #F7F3EE;
+  --color-text-heading: #F7F3EE;
+  --color-text-secondary: #C7B8AA;
+  --color-text-muted: #C7B8AA;
+  --color-text-tertiary: #C7B8AA;
+  --color-text-on-dark: #F7F3EE;
+  --color-border: #3A2B21;
+  --color-border-light: #3A2B21;
+  --color-border-alt: #32261D;
+  --color-accent: #B07A50;
+  --color-header-bg: rgba(24, 18, 14, 0.85);
+  --color-header-bg-solid: rgba(24, 18, 14, 0.92);
+  --color-overlay: rgba(0, 0, 0, 0.6);
+  --color-shadow: rgba(0, 0, 0, 0.15);
+  --color-shadow-hover: rgba(0, 0, 0, 0.3);
+  --color-shadow-strong: rgba(0, 0, 0, 0.5);
+  --color-footer-bg: #18120E;
+  --color-footer-text: #C7B8AA;
+  --color-footer-heading: #F7F3EE;
+  --color-footer-muted: #8B7A6E;
+  --color-footer-label: #5A3E32;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -10,10 +68,11 @@ html {
 
 body {
   font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
-  color: #5a3e32;
-  background: #fff;
+  color: var(--color-text);
+  background: var(--color-bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 #root {

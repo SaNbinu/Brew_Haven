@@ -1,6 +1,6 @@
 .featured {
   padding: 120px 64px;
-  background: #fdfcfa;
+  background: var(--color-bg);
 }
 
 .featured__header {
@@ -12,7 +12,7 @@
 .featured__title {
   font-size: 48px;
   font-weight: 800;
-  color: #1a110b;
+  color: var(--color-text-heading);
   line-height: 1.15;
   margin: 0 0 16px;
   letter-spacing: -1.5px;
@@ -21,7 +21,7 @@
 .featured__subtitle {
   font-size: 16px;
   line-height: 1.7;
-  color: #7a6a5e;
+  color: var(--color-text-secondary);
   margin: 0;
 }
 
@@ -36,7 +36,7 @@
 .featured__card {
   display: flex;
   flex-direction: column;
-  background: #fff;
+  background: var(--color-card);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 2px 12px rgba(26, 17, 11, 0.06);
@@ -70,7 +70,7 @@
 .featured__card-name {
   font-size: 22px;
   font-weight: 700;
-  color: #1a110b;
+  color: var(--color-text-heading);
   margin: 0;
 }
 
@@ -84,14 +84,14 @@
 .featured__card-price {
   font-size: 20px;
   font-weight: 700;
-  color: #3c2418;
+  color: var(--color-primary-hover);
 }
 
 .featured__card-btn {
   display: inline-block;
   padding: 10px 24px;
-  background: #1a110b;
-  color: #fff;
+  background: var(--color-primary);
+  color: var(--color-card);
   border: none;
   border-radius: 4px;
   font-size: 13px;
@@ -103,7 +103,7 @@
 }
 
 .featured__card-btn:hover {
-  background: #3c2418;
+  background: var(--color-primary-hover);
   transform: scale(1.04);
 }
 

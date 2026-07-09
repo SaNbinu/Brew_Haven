@@ -3,7 +3,7 @@ import './Header.css'
 
 const navLinks = ['Home', 'Menu', 'About', 'Contact']
 
-function Header() {
+function Header({ theme, onToggleTheme }) {
   const [menuOpen, setMenuOpen] = useState(false)
   const burgerRef = useRef(null)
 
@@ -86,11 +86,27 @@ function Header() {
               ))}
             </ul>
 
+            <button
+              className="header__theme-btn header__theme-btn--mobile"
+              onClick={onToggleTheme}
+              aria-label="Toggle theme"
+            >
+              {theme === 'dark' ? '☀️' : '🌙'}
+            </button>
 
           </div>
         </nav>
 
-        <a href="#contact" className="header__order-btn">Order Now</a>
+        <div className="header__actions">
+          <a href="#contact" className="header__order-btn">Order Now</a>
+          <button
+            className="header__theme-btn header__theme-btn--desktop"
+            onClick={onToggleTheme}
+            aria-label="Toggle theme"
+          >
+            {theme === 'dark' ? '☀️' : '🌙'}
+          </button>
+        </div>
       </div>
     </header>
   )

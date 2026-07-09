@@ -1,6 +1,6 @@
 .testimonials {
   padding: 120px 64px;
-  background: #f9f6f3;
+  background: var(--color-surface);
 }
 
 .testimonials__inner {
@@ -16,7 +16,7 @@
 .testimonials__title {
   font-size: 48px;
   font-weight: 800;
-  color: #1a110b;
+  color: var(--color-text-heading);
   line-height: 1.15;
   margin: 0 0 24px;
   letter-spacing: -1.5px;
@@ -31,19 +31,19 @@
 
 .testimonials__rating-stars {
   font-size: 18px;
-  color: #c67a4e;
+  color: var(--color-accent);
   letter-spacing: 4px;
 }
 
 .testimonials__rating-value {
   font-size: 15px;
   font-weight: 600;
-  color: #1a110b;
+  color: var(--color-text-heading);
 }
 
 .testimonials__rating-label {
   font-size: 13px;
-  color: #8b7a6e;
+  color: var(--color-text-tertiary);
 }
 
 .testimonials__grid {
@@ -55,8 +55,8 @@
 .testimonials__card {
   display: flex;
   flex-direction: column;
-  background: #fff;
-  border: 1px solid #ece6e0;
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
   border-radius: 20px;
   padding: 40px 32px;
   box-shadow: 0 2px 12px rgba(26, 17, 11, 0.04);
@@ -70,7 +70,7 @@
 
 .testimonials__stars {
   font-size: 16px;
-  color: #c67a4e;
+  color: var(--color-accent);
   letter-spacing: 3px;
   margin-bottom: 20px;
 }
@@ -78,7 +78,7 @@
 .testimonials__text {
   font-size: 16px;
   line-height: 1.7;
-  color: #6b5a4f;
+  color: var(--color-text-muted);
   margin: 0 0 auto;
   font-style: normal;
 }
@@ -89,18 +89,18 @@
   gap: 2px;
   margin-top: 24px;
   padding-top: 20px;
-  border-top: 1px solid #f0eae4;
+  border-top: 1px solid var(--color-border-alt);
 }
 
 .testimonials__name {
   font-size: 16px;
   font-weight: 600;
-  color: #1a110b;
+  color: var(--color-text-heading);
 }
 
 .testimonials__city {
   font-size: 13px;
-  color: #8b7a6e;
+  color: var(--color-text-tertiary);
 }
 
 @media (max-width: 1024px) {

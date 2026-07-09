@@ -10,6 +10,7 @@ const drinks = [
     description:
       'Bold and intense single-origin shot with a rich crema finish.',
     price: '$3.50',
+    menuIndex: 0,
   },
   {
     name: 'Cappuccino',
@@ -17,6 +18,7 @@ const drinks = [
     description:
       'Smooth espresso topped with velvety steamed milk and a light foam.',
     price: '$4.50',
+    menuIndex: 1,
   },
   {
     name: 'Caramel Latte',
@@ -24,10 +26,11 @@ const drinks = [
     description:
       'House-made caramel sauce meets silky latte for a sweet balance.',
     price: '$5.00',
+    menuIndex: 2,
   },
 ]
 
-function Featured() {
+function Featured({ onSelect }) {
   return (
     <section className="featured">
       <div className="featured__header">
@@ -51,7 +54,7 @@ function Featured() {
               <p className="featured__card-desc">{drink.description}</p>
               <div className="featured__card-footer">
                 <span className="featured__card-price">{drink.price}</span>
-                <a href="#menu" className="featured__card-btn">Order</a>
+                <a href="#menu" className="featured__card-btn" onClick={() => onSelect(drink.menuIndex)}>Order</a>
               </div>
             </div>
           </div>

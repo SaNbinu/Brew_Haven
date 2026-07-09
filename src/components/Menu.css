@@ -1,6 +1,6 @@
 .menu {
   padding: 120px 64px;
-  background: #fdfcfa;
+  background: var(--color-bg);
 }
 
 .menu__inner {
@@ -16,7 +16,7 @@
 .menu__title {
   font-size: 48px;
   font-weight: 800;
-  color: #1a110b;
+  color: var(--color-text-heading);
   line-height: 1.15;
   margin: 0 0 16px;
   letter-spacing: -1.5px;
@@ -25,7 +25,7 @@
 .menu__subtitle {
   font-size: 16px;
   line-height: 1.7;
-  color: #7a6a5e;
+  color: var(--color-text-secondary);
   margin: 0;
 }
 
@@ -70,7 +70,7 @@
   text-align: left;
   background: none;
   border: none;
-  border-bottom: 1px solid #ece6e0;
+  border-bottom: 1px solid var(--color-border);
   padding: 24px 20px;
   cursor: pointer;
   transition: background 0.2s;
@@ -82,7 +82,7 @@
 }
 
 .menu__item:hover .menu__item-name {
-  color: #5a3e32;
+  color: var(--color-text);
 }
 
 .menu__item::before {
@@ -92,7 +92,7 @@
   top: 0;
   width: 3px;
   height: 100%;
-  background: #1a110b;
+  background: var(--color-primary);
   border-radius: 0 2px 2px 0;
   opacity: 0;
   transition: opacity 0.25s;
@@ -124,18 +124,18 @@
 .menu__item-name {
   font-size: 22px;
   font-weight: 600;
-  color: #7a6a5e;
+  color: var(--color-text-secondary);
   transition: color 0.25s;
 }
 
 .menu__item--active .menu__item-name {
-  color: #1a110b;
+  color: var(--color-text-heading);
 }
 
 .menu__item-price {
   font-size: 18px;
   font-weight: 700;
-  color: #3c2418;
+  color: var(--color-primary-hover);
 }
 
 .menu__item-desc-wrap {
@@ -145,7 +145,7 @@
 .menu__item-desc {
   font-size: 15px;
   line-height: 1.6;
-  color: #7a6a5e;
+  color: var(--color-text-secondary);
   margin: 0;
   transition: opacity 0.25s ease;
 }
@@ -155,8 +155,8 @@
   align-self: flex-start;
   margin-top: 36px;
   padding: 14px 36px;
-  background: #1a110b;
-  color: #fff;
+  background: var(--color-primary);
+  color: var(--color-card);
   border: none;
   border-radius: 4px;
   font-size: 14px;
@@ -168,7 +168,7 @@
 }
 
 .menu__btn:hover {
-  background: #3c2418;
+  background: var(--color-primary-hover);
   transform: scale(1.04);
 }
 

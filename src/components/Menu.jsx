@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './Menu.css'
 import espressoImg from '../assets/images/espresso.jpg'
 import cappuccinoImg from '../assets/images/cappuccino.jpg'
@@ -7,7 +6,7 @@ import flatWhiteImg from '../assets/images/flat-white.jpg'
 import mochaImg from '../assets/images/mocha.jpg'
 import coldBrewImg from '../assets/images/cold-brew.jpg'
 
-const drinks = [
+export const drinks = [
   {
     name: 'Espresso',
     image: espressoImg,
@@ -46,19 +45,7 @@ const drinks = [
   },
 ]
 
-function Menu() {
-  const [selectedIndex, setSelectedIndex] = useState(0)
-  const [fading, setFading] = useState(false)
-
-  const handleSelect = (index) => {
-    if (index === selectedIndex) return
-    setFading(true)
-    setTimeout(() => {
-      setSelectedIndex(index)
-      setFading(false)
-    }, 150)
-  }
-
+function Menu({ selectedIndex, fading, onSelect }) {
   const selected = drinks[selectedIndex]
 
   return (
@@ -88,7 +75,7 @@ function Menu() {
               <button
                 key={drink.name}
                 className={`menu__item ${i === selectedIndex ? 'menu__item--active' : ''}`}
-                onClick={() => handleSelect(i)}
+                onClick={() => onSelect(i)}
               >
                 <div className="menu__item-top">
                   <span className="menu__item-name">{drink.name}</span>
