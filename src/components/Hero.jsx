@@ -1,4 +1,5 @@
 import './Hero.css'
+import heroImg from '../assets/images/hero.jpg'
 
 function Hero() {
   return (
@@ -36,7 +37,11 @@ function Hero() {
       </div>
 
       <div className="hero__image">
-        <div className="hero__image-placeholder" />
+        <img
+          src={heroImg}
+          alt="A freshly brewed cup of coffee"
+          className="hero__image-img"
+        />
       </div>
     </section>
   )

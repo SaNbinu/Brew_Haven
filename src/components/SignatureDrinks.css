@@ -1,15 +1,15 @@
-.featured {
+.signature {
   padding: 120px 64px;
-  background: #fdfcfa;
+  background: #f9f6f3;
 }
 
-.featured__header {
+.signature__header {
   text-align: center;
   max-width: 540px;
   margin: 0 auto 72px;
 }
 
-.featured__title {
+.signature__title {
   font-size: 48px;
   font-weight: 800;
   color: #1a110b;
@@ -18,14 +18,14 @@
   letter-spacing: -1.5px;
 }
 
-.featured__subtitle {
+.signature__subtitle {
   font-size: 16px;
   line-height: 1.7;
   color: #7a6a5e;
   margin: 0;
 }
 
-.featured__grid {
+.signature__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
@@ -33,61 +33,65 @@
   margin: 0 auto;
 }
 
-.featured__card {
+.signature__card {
   display: flex;
   flex-direction: column;
   background: #fff;
-  border-radius: 12px;
-  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid #ece6e0;
+  padding: 24px;
   box-shadow: 0 2px 12px rgba(26, 17, 11, 0.06);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-.featured__card:hover {
+.signature__card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 36px rgba(26, 17, 11, 0.1);
 }
 
-.featured__card-image {
-  flex-shrink: 0;
-  height: 240px;
+.signature__card-image {
   width: 100%;
+  height: 220px;
   object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  transition: transform 0.4s ease;
 }
 
-.featured__card-body {
-  flex: 1;
-  padding: 28px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+.signature__card:hover .signature__card-image {
+  transform: scale(1.04);
 }
 
-.featured__card-desc {
-  flex: 1;
-}
-
-.featured__card-name {
+.signature__card-name {
   font-size: 22px;
   font-weight: 700;
   color: #1a110b;
-  margin: 0;
+  margin: 0 0 8px;
 }
 
-.featured__card-footer {
+.signature__card-desc {
+  font-size: 14px;
+  line-height: 1.65;
+  color: #7a6a5e;
+  margin: 0 0 auto;
+}
+
+.signature__card-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 8px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #f0eae4;
 }
 
-.featured__card-price {
+.signature__card-price {
   font-size: 20px;
   font-weight: 700;
   color: #3c2418;
 }
 
-.featured__card-btn {
+.signature__card-btn {
   padding: 10px 24px;
   background: #1a110b;
   color: #fff;
@@ -100,45 +104,41 @@
   transition: background 0.25s, transform 0.2s;
 }
 
-.featured__card-btn:hover {
+.signature__card-btn:hover {
   background: #3c2418;
   transform: scale(1.04);
 }
 
-.featured__card-btn:active {
+.signature__card-btn:active {
   transform: scale(0.97);
 }
 
 @media (max-width: 1024px) {
-  .featured {
+  .signature {
     padding: 80px 32px;
   }
 
-  .featured__grid {
+  .signature__grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
   }
 }
 
 @media (max-width: 640px) {
-  .featured {
+  .signature {
     padding: 60px 20px;
   }
 
-  .featured__header {
+  .signature__header {
     margin-bottom: 48px;
   }
 
-  .featured__title {
+  .signature__title {
     font-size: 36px;
   }
 
-  .featured__grid {
+  .signature__grid {
     grid-template-columns: 1fr;
     gap: 20px;
-  }
-
-  .featured__card-image {
-    height: 200px;
   }
 }

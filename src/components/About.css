@@ -13,11 +13,11 @@
   align-items: center;
 }
 
-.about__image-placeholder {
+.about__image-img {
   width: 100%;
   max-width: 520px;
   height: 580px;
-  background: linear-gradient(145deg, #e8dfd7 0%, #ddd2c8 100%);
+  object-fit: cover;
   border-radius: 12px;
 }
 
@@ -65,11 +65,16 @@
   letter-spacing: 0.5px;
   text-decoration: none;
   cursor: pointer;
-  transition: background 0.25s;
+  transition: background 0.25s, transform 0.2s;
 }
 
 .about__btn:hover {
   background: #3c2418;
+  transform: scale(1.04);
+}
+
+.about__btn:active {
+  transform: scale(0.97);
 }
 
 @media (max-width: 1024px) {
@@ -84,7 +89,7 @@
     max-width: 100%;
   }
 
-  .about__image-placeholder {
+  .about__image-img {
     height: 400px;
   }
 }
@@ -100,7 +105,7 @@
     letter-spacing: -1px;
   }
 
-  .about__image-placeholder {
+  .about__image-img {
     height: 280px;
   }
 }

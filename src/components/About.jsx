@@ -1,10 +1,15 @@
 import './About.css'
+import aboutImg from '../assets/images/about.jpg'
 
 function About() {
   return (
     <section className="about" id="about">
       <div className="about__image">
-        <div className="about__image-placeholder" />
+        <img
+          src={aboutImg}
+          alt="Interior of Brew Haven coffee shop"
+          className="about__image-img"
+        />
       </div>
 
       <div className="about__content">

@@ -45,7 +45,15 @@
   border: none;
   border-radius: 4px;
   text-decoration: none;
-  transition: background 0.25s, color 0.25s;
+  transition: background 0.25s, color 0.25s, transform 0.2s;
+}
+
+.hero__btn:hover {
+  transform: scale(1.04);
+}
+
+.hero__btn:active {
+  transform: scale(0.97);
 }
 
 .hero__btn--primary {
@@ -66,6 +74,11 @@
 .hero__btn--secondary:hover {
   border-color: #1a110b;
   color: #1a110b;
+  transform: scale(1.04);
+}
+
+.hero__btn--secondary:active {
+  transform: scale(0.97);
 }
 
 .hero__badge {
@@ -119,10 +132,10 @@
   align-items: center;
 }
 
-.hero__image-placeholder {
+.hero__image-img {
   width: 460px;
   height: 560px;
-  background: linear-gradient(145deg, #f3ede8 0%, #e8dfd7 100%);
+  object-fit: cover;
   border-radius: 12px;
 }
 
@@ -156,7 +169,7 @@
     justify-content: center;
   }
 
-  .hero__image-placeholder {
+  .hero__image-img {
     width: 320px;
     height: 380px;
   }
@@ -198,7 +211,7 @@
     display: none;
   }
 
-  .hero__image-placeholder {
+  .hero__image-img {
     width: 240px;
     height: 280px;
   }

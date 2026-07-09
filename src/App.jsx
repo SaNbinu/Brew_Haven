@@ -2,6 +2,7 @@ import Header from './components/Header.jsx'
 import Hero from './components/Hero.jsx'
 import About from './components/About.jsx'
 import Featured from './components/Featured.jsx'
+import SignatureDrinks from './components/SignatureDrinks.jsx'
 import Footer from './components/Footer.jsx'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Hero />
         <About />
         <Featured />
+        <SignatureDrinks />
       </main>
       <Footer />
     </>
