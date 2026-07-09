@@ -73,8 +73,16 @@
   border-bottom: 1px solid #ece6e0;
   padding: 24px 20px;
   cursor: pointer;
-  transition: background 0.25s;
+  transition: background 0.2s;
   position: relative;
+}
+
+.menu__item:hover {
+  background: rgba(26, 17, 11, 0.015);
+}
+
+.menu__item:hover .menu__item-name {
+  color: #5a3e32;
 }
 
 .menu__item::before {
@@ -142,7 +150,8 @@
   transition: opacity 0.25s ease;
 }
 
-.menu__btn {
+  .menu__btn {
+  display: inline-block;
   align-self: flex-start;
   margin-top: 36px;
   padding: 14px 36px;
@@ -153,6 +162,7 @@
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.5px;
+  text-decoration: none;
   cursor: pointer;
   transition: background 0.25s, transform 0.2s;
 }

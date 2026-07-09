@@ -29,7 +29,7 @@ const drinks = [
 
 function Featured() {
   return (
-    <section className="featured" id="menu">
+    <section className="featured">
       <div className="featured__header">
         <h2 className="featured__title">Our Signature Coffee</h2>
         <p className="featured__subtitle">
@@ -51,7 +51,7 @@ function Featured() {
               <p className="featured__card-desc">{drink.description}</p>
               <div className="featured__card-footer">
                 <span className="featured__card-price">{drink.price}</span>
-                <button className="featured__card-btn">Order</button>
+                <a href="#menu" className="featured__card-btn">Order</a>
               </div>
             </div>
           </div>

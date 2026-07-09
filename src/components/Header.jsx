@@ -90,7 +90,7 @@ function Header() {
           </div>
         </nav>
 
-        <button className="header__order-btn">Order Now</button>
+        <a href="#contact" className="header__order-btn">Order Now</a>
       </div>
     </header>
   )

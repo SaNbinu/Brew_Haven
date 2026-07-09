@@ -28,7 +28,7 @@ function About() {
           Every batch is roasted in-house to highlight its unique character,
           ensuring that each visit brings a new discovery and a familiar comfort.
         </p>
-        <a href="#menu" className="about__btn">Learn More</a>
+        <a href="#testimonials" className="about__btn">Learn More</a>
       </div>
     </section>
   )

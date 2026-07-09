@@ -62,7 +62,7 @@ function Menu() {
   const selected = drinks[selectedIndex]
 
   return (
-    <section className="menu" id="menu-section">
+    <section className="menu" id="menu">
       <div className="menu__inner">
         <div className="menu__header">
           <h2 className="menu__title">Menu</h2>
@@ -102,7 +102,7 @@ function Menu() {
               </button>
             ))}
 
-            <button className="menu__btn">View Full Menu</button>
+            <a href="#contact" className="menu__btn">View Full Menu</a>
           </div>
         </div>
       </div>

@@ -18,8 +18,32 @@
   font-weight: 800;
   color: #1a110b;
   line-height: 1.15;
-  margin: 0;
+  margin: 0 0 24px;
   letter-spacing: -1.5px;
+}
+
+.testimonials__rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.testimonials__rating-stars {
+  font-size: 18px;
+  color: #c67a4e;
+  letter-spacing: 4px;
+}
+
+.testimonials__rating-value {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a110b;
+}
+
+.testimonials__rating-label {
+  font-size: 13px;
+  color: #8b7a6e;
 }
 
 .testimonials__grid {

@@ -15,7 +15,7 @@ function Hero() {
           uncompromising craftsmanship.
         </p>
         <div className="hero__buttons">
-          <button className="hero__btn hero__btn--primary">Order Coffee</button>
+          <a href="#contact" className="hero__btn hero__btn--primary">Order Coffee</a>
           <a href="#menu" className="hero__btn hero__btn--secondary">View Menu</a>
         </div>
         <div className="hero__trust">
