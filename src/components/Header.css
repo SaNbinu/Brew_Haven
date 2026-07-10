@@ -263,3 +263,8 @@
 .dark-theme .header__nav-panel {
   background: var(--color-bg);
 }
+
+.dark-theme .header {
+  background: var(--color-bg);
+  backdrop-filter: none;
+}

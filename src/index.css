@@ -43,8 +43,8 @@
   --color-border-light: #3A2B21;
   --color-border-alt: #32261D;
   --color-accent: #B07A50;
-  --color-header-bg: rgba(24, 18, 14, 0.85);
-  --color-header-bg-solid: rgba(24, 18, 14, 0.92);
+  --color-header-bg: rgba(24, 18, 14, 0.95);
+  --color-header-bg-solid: rgba(24, 18, 14, 0.97);
   --color-overlay: rgba(0, 0, 0, 0.6);
   --color-shadow: rgba(0, 0, 0, 0.15);
   --color-shadow-hover: rgba(0, 0, 0, 0.3);
