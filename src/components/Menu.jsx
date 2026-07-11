@@ -1,10 +1,10 @@
 import './Menu.css'
-import espressoImg from '../assets/images/espresso.jpg'
-import cappuccinoImg from '../assets/images/cappuccino.jpg'
-import latteImg from '../assets/images/latte.jpg'
-import flatWhiteImg from '../assets/images/flat-white.jpg'
-import mochaImg from '../assets/images/mocha.jpg'
-import coldBrewImg from '../assets/images/cold-brew.jpg'
+import espressoImg from '../assets/images/menu/espresso.png'
+import cappuccinoImg from '../assets/images/menu/cappuccino.png'
+import caramelLatteImg from '../assets/images/menu/caramel-latte.png'
+import flatWhiteImg from '../assets/images/menu/flat-white.png'
+import mochaImg from '../assets/images/menu/mocha.png'
+import coldBrewImg from '../assets/images/menu/cold-brew.png'
 
 export const drinks = [
   {
@@ -20,8 +20,8 @@ export const drinks = [
     description: 'Smooth espresso with creamy milk foam.',
   },
   {
-    name: 'Latte',
-    image: latteImg,
+    name: 'Caramel Latte',
+    image: caramelLatteImg,
     price: '$5.20',
     description: 'Perfect balance of espresso and steamed milk.',
   },
