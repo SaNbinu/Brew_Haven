@@ -19,16 +19,35 @@ function About() {
           Tells a Story
         </h2>
         <p className="about__description">
-          Nestled in the heart of the city, Brew Haven is more than a coffee
-          shop — it is a sanctuary for those who appreciate the art of a
-          perfectly brewed cup. We source our beans directly from small farms
-          across Ethiopia, Colombia, and Guatemala.
+          Nestled in the heart of the city, Brew Haven is a sanctuary for those
+          who appreciate the art of a perfectly brewed cup. We source our beans
+          directly from small farms across Ethiopia, Colombia, and Guatemala,
+          then roast each batch in-house to bring out its unique character.
         </p>
-        <p className="about__description">
-          Every batch is roasted in-house to highlight its unique character,
-          ensuring that each visit brings a new discovery and a familiar comfort.
-        </p>
-        <a href="#testimonials" className="about__btn">Learn More</a>
+        <div className="about__divider" />
+        <div className="about__benefits">
+          <div className="about__benefit">
+            <span className="about__benefit-icon">☕</span>
+            <div>
+              <span className="about__benefit-title">Specialty Beans</span>
+              <p className="about__benefit-desc">Freshly sourced from trusted farms.</p>
+            </div>
+          </div>
+          <div className="about__benefit">
+            <span className="about__benefit-icon">🌍</span>
+            <div>
+              <span className="about__benefit-title">Ethically Sourced</span>
+              <p className="about__benefit-desc">Supporting sustainable coffee growers.</p>
+            </div>
+          </div>
+          <div className="about__benefit">
+            <span className="about__benefit-icon">🔥</span>
+            <div>
+              <span className="about__benefit-title">Roasted Daily</span>
+              <p className="about__benefit-desc">Crafted in small batches for perfect flavour.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   )
