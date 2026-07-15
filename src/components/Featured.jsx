@@ -1,7 +1,7 @@
 import './Featured.css'
-import espressoImg from '../assets/images/espresso.jpg'
-import cappuccinoImg from '../assets/images/cappuccino.jpg'
-import caramelLatteImg from '../assets/images/caramel-latte.jpg'
+import espressoImg from '../assets/images/signature-coffee/espresso.png'
+import cappuccinoImg from '../assets/images/signature-coffee/cappuccino.png'
+import caramelLatteImg from '../assets/images/signature-coffee/caramel-latte.png'
 
 const drinks = [
   {
