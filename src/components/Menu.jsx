@@ -16,13 +16,13 @@ export const drinks = [
   {
     name: 'Cappuccino',
     image: cappuccinoImg,
-    price: '$4.80',
+    price: '$4.50',
     description: 'Smooth espresso with creamy milk foam.',
   },
   {
     name: 'Caramel Latte',
     image: caramelLatteImg,
-    price: '$5.20',
+    price: '$5.00',
     description: 'Perfect balance of espresso and steamed milk.',
   },
   {
