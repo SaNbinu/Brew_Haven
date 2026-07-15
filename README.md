@@ -6,6 +6,10 @@ The project focuses on clean design, responsive layout, smooth navigation, and r
 
 ---
 
+## Live Demo
+https://thebrewhaven.vercel.app/
+
+
 ## ✨ Features
 
 - Modern and minimalistic design
